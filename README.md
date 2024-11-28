@@ -6,8 +6,8 @@ An educational tool for visualizing Binary Search Tree operations, built with Qt
 ## Screenshots
 
 <div align="center">
-  <img src="screenshots/1.png" alt="Stack Visualization" width="280">
-  <img src="screenshots/2.png" alt="Queue Visualization" width="280">
+  <img src="screenshots/1.png" alt="Stack Visualization" width="720">
+  <img src="screenshots/2.png" alt="Queue Visualization" width="720">
 </div>
 
 
