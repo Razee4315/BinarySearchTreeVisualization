@@ -3,7 +3,6 @@
 An educational tool for visualizing Binary Search Tree operations, built with Qt 6 and modern C++.
 
 ![BST Visualizer](resources/logo.svg)
-
 ## Screenshots
 
 <div align="center">
