@@ -4,6 +4,14 @@ An educational tool for visualizing Binary Search Tree operations, built with Qt
 
 ![BST Visualizer](resources/logo.svg)
 
+## Screenshots
+
+<div align="center">
+  <img src="docs/screenshots/1.png" alt="Stack Visualization" width="280">
+  <img src="docs/screenshots/2.png" alt="Queue Visualization" width="280">
+</div>
+
+
 ## Features
 
 - Interactive BST visualization
