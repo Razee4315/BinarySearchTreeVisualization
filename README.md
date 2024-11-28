@@ -102,4 +102,4 @@ Saqlain - [@Razee4315](https://github.com/Razee4315)
 
 ## Support
 
-For support, email [your-email] or create an issue in the repository.
+For support, email saqlainrazee@gmail.com or create an issue in the repository.
