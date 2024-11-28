@@ -1,5 +1,5 @@
 <div align="center">
-  [BST Visualizer](resources/logo.svg)
+  <img src="resources/logo.svg" alt="Logo">
 </div>
 
 # Binary Search Tree Visualization
