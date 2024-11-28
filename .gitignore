@@ -1,0 +1,65 @@
+# This file is used to ignore files which are generated
+# ----------------------------------------------------------------------------
+
+# Build directories
+build/
+deploy/
+installer/
+releases/
+
+# Qt specific
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+*.qm
+.qmake.cache
+.qmake.stash
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.ilk
+*.pdb
+*.exp
+*.lib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# Windows specific
+Thumbs.db
+desktop.ini
+
+# Debug files
+*.debug
+*.pdb
+
+# User-specific files
+*.user
+*.user.*
+*.autosave
+
+# Allow releases directory
+!/releases/
+!/releases/*.exe
+!/releases/README.md

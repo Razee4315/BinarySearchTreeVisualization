@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <!-- Background circle with gradient -->
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+        </linearGradient>
+        <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="2" dy="2"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Main circle -->
+    <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" filter="url(#dropShadow)"/>
+    
+    <!-- Tree nodes with animations -->
+    <g fill="#ffffff" filter="url(#dropShadow)">
+        <!-- Root node -->
+        <circle cx="100" cy="60" r="20">
+            <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+        <!-- Left subtree -->
+        <circle cx="60" cy="110" r="18">
+            <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+        </circle>
+        <circle cx="35" cy="150" r="15">
+            <animate attributeName="r" values="15;17;15" dur="2s" repeatCount="indefinite" begin="1s"/>
+        </circle>
+        
+        <!-- Right subtree -->
+        <circle cx="140" cy="110" r="18">
+            <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+        </circle>
+        <circle cx="165" cy="150" r="15">
+            <animate attributeName="r" values="15;17;15" dur="2s" repeatCount="indefinite" begin="1s"/>
+        </circle>
+    </g>
+    
+    <!-- Connecting lines with animation -->
+    <g stroke="#ffffff" stroke-width="3" stroke-linecap="round">
+        <path d="M100,80 L60,110">
+            <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M100,80 L140,110">
+            <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M60,110 L35,150">
+            <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M140,110 L165,150">
+            <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+        </path>
+    </g>
+    
+    <!-- Node values -->
+    <g fill="#1565C0" font-family="Arial" font-weight="bold" text-anchor="middle">
+        <text x="100" y="65" font-size="16">8</text>
+        <text x="60" y="115" font-size="14">4</text>
+        <text x="35" y="155" font-size="12">2</text>
+        <text x="140" y="115" font-size="14">12</text>
+        <text x="165" y="155" font-size="12">16</text>
+    </g>
+</svg>
