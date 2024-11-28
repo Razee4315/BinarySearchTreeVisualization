@@ -30,12 +30,6 @@ An educational tool for visualizing Binary Search Tree operations, built with Qt
   - Visual feedback
 - Professional UI with consistent light theme
 
-## Prerequisites
-
-- Windows 7 or later
-- 4GB RAM recommended
-- 100MB free disk space
-- 1024x768 minimum screen resolution
 
 ## Installation
 
